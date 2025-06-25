@@ -17,7 +17,7 @@ $genero = $conn->real_escape_string($input["genero"]);
 $anio_estreno = intval($input["anio_estreno"]);
 $estudio_animacion = $conn->real_escape_string($input["estudio_animacion"]);
 
-$query = "UPDATE anime_series SET titulo = ?, genero = ?, anio_estreno = ?, estudio_animacion = ? WHERE id = ?";
+$query = "UPDATE anime_series SET titulo = ?, genero = ?, año_estreno = ?, estudio_animacion = ? WHERE id = ?";
 
 $st = $conn->prepare($query);
 
